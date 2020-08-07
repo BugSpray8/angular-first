@@ -1,0 +1,14 @@
+<p>list-recipe works!</p>
+
+
+<p>{{currentCar}}</p>
+
+<button [hidden]="allowed" (click)="activate(8)" class="btn btn-success" style="background-color: red; color: whitesmoke;">
+    STATUS
+</button>
+
+<input type="text" class="form-control" [(ngModel)]="currentCar">
+
+<div class="content-array">
+    <ul><li *ngFor="let car of cars">{{car}}</li></ul>
+</div>
